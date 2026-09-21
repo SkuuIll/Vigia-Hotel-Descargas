@@ -9,6 +9,12 @@ Este repositorio contiene únicamente los instaladores compilados de Vigía Hote
 
 Las descargas están en [Releases](../../releases/latest). No descargues **Source code**, porque GitHub lo genera automáticamente y no es el instalador.
 
+## Guías públicas
+
+- [Instalar el sistema en una VPS nueva](docs/INSTALACION.md)
+- [Solicitar y activar una licencia](docs/LICENCIAS.md)
+- [Abrir el portal de licencias](https://vigia-licencias-portal.moreappmix.workers.dev/)
+
 ## Activación
 
 El paquete puede descargarse públicamente, pero el sistema requiere una licencia Ed25519 emitida para el hotel, dominio e instalación correspondientes. La descarga pública no permite activar módulos ni reutilizar una licencia en otro servidor.
