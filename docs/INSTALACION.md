@@ -59,15 +59,15 @@ El instalador genera automáticamente contraseñas, PIN, URLs y un identificador
 
 ## 4. Solicitar la licencia
 
-Seguí la [guía de licencias](LICENCIAS.md). Recibirás un archivo parecido a `paquete-activacion-HOTEL_CENTRAL.zip`.
+Seguí la [guía de licencias](LICENCIAS.md). Recibirás un archivo parecido a `activacion-HOTEL_CENTRAL.vigia`.
 
 ## 5. Activar e iniciar
 
-Copiá el ZIP a `/opt/hotel-control` y ejecutá:
+Copiá el archivo `.vigia` a `/opt/hotel-control` y ejecutá:
 
 ```bash
 cd /opt/hotel-control
-./instalar.sh paquete-activacion-HOTEL_CENTRAL.zip
+./instalar.sh activacion-HOTEL_CENTRAL.vigia
 docker compose --env-file .env -f docker-compose.yml ps
 ```
 
