@@ -5,14 +5,11 @@ La licencia habilita los módulos contratados y queda vinculada al hotel, domini
 ## Flujo simplificado
 
 1. En la VPS ejecutá `./instalar.sh` para generar `solicitud-licencia.json`.
-2. Abrí el [portal de licencias](https://vigia-licencias-portal.moreappmix.workers.dev/).
-3. Registrá el hotel si todavía no existe.
-4. En **Licencias**, seleccioná **Importar solicitud del servidor** y elegí el JSON.
-5. Elegí plan, vigencia, usuarios activos máximos y módulos.
-6. Descargá la solicitud comercial y firmala con Vigía Licencias portable para Windows.
-7. Entregá el ZIP resultante al hotel y, si querés conservar una copia, adjuntalo al registro del portal.
+2. Entregá ese archivo al proveedor por el canal acordado.
+3. El proveedor validará el hotel, dominio, instalación, vigencia, usuarios y módulos contratados.
+4. Recibirás un ZIP de activación firmado para instalarlo en la VPS.
 
-La importación del JSON ocurre localmente en el navegador. El archivo no se sube a Cloudflare. El portal tampoco interviene en la validación diaria del hotel o de la APK.
+La licencia se valida localmente en el servidor y en la APK. El proveedor no necesita acceso remoto a la VPS para emitirla.
 
 ## Formulario de cliente
 

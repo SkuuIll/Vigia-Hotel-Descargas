@@ -13,7 +13,6 @@ Las descargas están en [Releases](../../releases/latest). No descargues **Sourc
 
 - [Instalar el sistema en una VPS nueva](docs/INSTALACION.md)
 - [Solicitar y activar una licencia](docs/LICENCIAS.md)
-- [Abrir el portal de licencias](https://vigia-licencias-portal.moreappmix.workers.dev/)
 
 ## Activación
 
