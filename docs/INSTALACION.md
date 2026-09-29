@@ -55,21 +55,13 @@ El asistente solicita:
 | Dominio | `gestion.hotel.com` | Sin `https://` ni rutas |
 | Correo | `sistemas@hotel.com` | Se utiliza para el certificado HTTPS |
 
-El instalador genera automáticamente contraseñas, PIN, URLs y un identificador único. Si todavía no existe una licencia, crea `/opt/hotel-control/solicitud-licencia.json` y se detiene de forma segura.
+El instalador genera automáticamente contraseñas, PIN, URLs y un identificador único. **La instalación termina y todos los servicios arrancan aunque todavía no exista una licencia.**
 
-## 4. Solicitar la licencia
+## 4. Activar desde la web
 
-Seguí la [guía de licencias](LICENCIAS.md). Recibirás un archivo parecido a `activacion-HOTEL_CENTRAL.vigia`.
+Abrí `https://gestion.hotel.com`. Como todavía no hay licencia, verás solamente la pantalla de activación. Copiá el código de instalación y envialo al proveedor. Cuando recibas la clave larga `VIGIA2...`, pegala y presioná **Activar ahora**. No hace falta entrar por SSH ni reiniciar contenedores.
 
-## 5. Activar e iniciar
-
-Copiá el archivo `.vigia` a `/opt/hotel-control` y ejecutá:
-
-```bash
-cd /opt/hotel-control
-./instalar.sh activacion-HOTEL_CENTRAL.vigia
-docker compose --env-file .env -f docker-compose.yml ps
-```
+Si preferís un archivo, la misma pantalla permite cargar `activacion-HOTEL_CENTRAL.vigia`.
 
 Comprobá el servicio sustituyendo el dominio:
 
@@ -77,7 +69,7 @@ Comprobá el servicio sustituyendo el dominio:
 curl -fsS https://gestion.hotel.com/api/v1/health
 ```
 
-Después abrí `https://gestion.hotel.com` en el navegador.
+Después de activarlo, la web abre automáticamente el ingreso normal.
 
 ## 6. Instalar la aplicación Android
 
@@ -108,7 +100,7 @@ mkdir -p backups
 ./respaldar.sh ./backups
 ```
 
-Guardá copias externas de `backups/`, `.env` y `licencia.json`. No publiques ninguno de esos archivos.
+Guardá copias externas de `backups/`, `.env` y `license-data/`. No publiques ninguno de esos archivos.
 
 ## Problemas frecuentes
 
