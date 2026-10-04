@@ -16,7 +16,7 @@ Las descargas están en [Releases](../../releases/latest). No descargues **Sourc
 
 ## Activación
 
-El paquete puede descargarse públicamente, pero el sistema requiere una licencia Ed25519 emitida para el hotel, dominio e instalación correspondientes. La descarga pública no permite activar módulos ni reutilizar una licencia en otro servidor.
+El paquete puede descargarse e instalarse públicamente sin una clave. Al abrir la web, el sistema muestra una pantalla de activación y permanece bloqueado hasta recibir una licencia Ed25519 emitida para ese hotel e instalación. La activación se hace con una sola clave larga o un archivo `.vigia`, sin depender del sistema operativo ni de una conexión permanente a internet.
 
 ## Actualizaciones
 
